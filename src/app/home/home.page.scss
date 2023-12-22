@@ -1,0 +1,120 @@
+h2 {
+  text-align: center;
+  color: #333;
+  font-size: 21px;
+  margin-top: 260px;
+}
+
+.meh-love-it {
+  font-size: 18px; /* Adjust the font size as needed */
+}
+
+
+//Anpassung des Abstands für den Ion Range Slider
+ion-range.custom-range {
+  margin-top: -10px;
+}
+
+//Ion Progress Bar Styling
+ion-progress-bar {
+  --background: #a2c5c3;
+  --progress-background: #03423f;
+  --height: 16px;
+  margin-top: 30px;
+  width: calc(100% - 60px);
+  margin-left: 30px;
+  border-radius: 8px;
+  height: 6px;
+}
+
+//Styling für den Fortschrittsbalken
+ion-progress-bar::part(progress) {
+  border-radius: 10px;
+  height: 6px;
+}
+
+h3 {
+  color: #333;
+  font-size: 22px;
+  margin-top: 200px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.center-content {
+  height: 100%;
+  display: flex;
+  vertical-align: center;
+  margin-bottom: -15px;
+}
+
+.page-container {
+  position: relative;
+}
+
+.center-grid {
+  height: 100%;
+  max-width: 97%;
+  margin: auto;
+  padding: 0 20px;
+  margin-bottom: 0px;
+  box-shadow: none;
+}
+
+ion-header {
+  box-shadow: none; 
+}
+
+
+//Ion Range Slider
+.custom-range {
+  --bar-background: #d7d7d7;
+  --bar-background-active: #DDA932;
+  --bar-height: 8px;
+  --bar-border-radius: 8px;
+  --knob-background: #ffffff;
+  --knob-size: 25px;
+  --pin-background: #ffafcc;
+  --pin-color: #ffffff;
+  --knob-border-color: #000000;
+  --knob-box-shadow: 0px 0px 0px 1px #505050;
+}
+
+.custom-range .range-knob-handle {
+  border-color: #000000;
+}
+
+ion-col.ion-text-left,
+ion-col.ion-text-right {
+  color: black;
+}
+
+ion-card-title {
+  font-size: 18px;
+  color: #333;
+}
+
+.ranking-card {
+  margin-top: -10px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-right: 30px;
+  margin-left: 30px;
+  box-shadow: none;
+}
+
+//Styling für Item Cards innerhalb der Ion Card
+ion-card-content {
+  background-color: #DEEDEB;
+  margin-top: -5px;
+  margin-bottom: -5px;
+  font-size: 20px;
+}
+
+.itemCard {
+  background-color: #DEEDEB;
+}
+
+ion-card-content .itemCard {
+  color: black;
+}

@@ -1,0 +1,105 @@
+<ion-header [translucent]="true">
+  <ion-progress-bar [value]="progress"></ion-progress-bar>
+
+  <swiper-container #swiper [allowTouchMove]="false">
+
+   <!-- Slide 1: Pizza-Bewertung -->
+    <swiper-slide>
+      <ion-grid class="center-grid">
+        <h2>How much do you like pizza?</h2>
+        <ion-row class="ion-align-items-center">
+          <ion-col class="center-content">
+            <ion-range class="custom-range" aria-label="Range with ionChange" [(ngModel)]="sliderValue"
+              (ionChange)="onIonChange($event)"></ion-range>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="6" class="ion-text-left meh-love-it">
+            meh
+          </ion-col>
+          <ion-col size="6" class="ion-text-right meh-love-it">
+            love it!
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </swiper-slide>
+
+  <!-- Slide 2: Kebap-Bewertung -->
+    <swiper-slide>
+      <ion-grid class="center-grid">
+        <h2>How much do you like kebap?</h2>
+        <ion-row class="ion-align-items-center">
+          <ion-col class="center-content">
+            <ion-range class="custom-range" aria-label="Range with ionChange" [(ngModel)]="sliderValue"
+              (ionChange)="onIonChange($event)"></ion-range>
+          </ion-col>
+        </ion-row>
+        <ion-row class="no-border">
+          <ion-col size="6" class="ion-text-left meh-love-it">
+            meh
+          </ion-col>
+          <ion-col size="6" class="ion-text-right meh-love-it">
+            love it!
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </swiper-slide>
+
+  <!-- Slide 3: Spaghetti-Bewertung -->
+    <swiper-slide>
+      <ion-grid class="center-grid">
+        <h2>How much do you like spaghetti?</h2>
+        <ion-row class="ion-align-items-center">
+          <ion-col class="center-content">
+            <ion-range class="custom-range" aria-label="Range with ionChange" [(ngModel)]="sliderValue"
+              (ionChange)="onIonChange($event)"></ion-range>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="6" class="ion-text-left meh-love-it">
+            meh
+          </ion-col>
+          <ion-col size="6" class="ion-text-right meh-love-it">
+            love it!
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </swiper-slide>
+
+  <!-- Slide 4: Salad-Bewertung -->
+    <swiper-slide>
+      <ion-grid class="center-grid">
+        <h2>How much do you like salad?</h2>
+        <ion-row class="ion-align-items-center">
+          <ion-col class="center-content">
+            <ion-range class="custom-range" aria-label="Range with ionChange" [(ngModel)]="sliderValue"
+              (ionChange)="onIonChange($event)"></ion-range>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="6" class="ion-text-left meh-love-it">
+            meh
+          </ion-col>
+          <ion-col size="6" class="ion-text-right meh-love-it">
+            love it!
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </swiper-slide>
+
+  <!-- Slide 5: Ranking -->
+    <swiper-slide>
+      <ion-card-header>
+        <h3>Your Ranking</h3>
+      </ion-card-header>
+      <ion-card class="ranking-card">
+        <ion-card-content>
+          <div class="itemCard" *ngFor="let item of ranking; let i = index">
+            <div>{{ i + 1 }}. {{ item['dish'] }}</div>
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </swiper-slide>
+  </swiper-container>
+
+</ion-header>
